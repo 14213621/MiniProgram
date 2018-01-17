@@ -1,0 +1,50 @@
+<view class="main" bindtap="show">
+  <image class="image" src="/img/img2.png" mode="aspectFill">
+  </image>
+  <view class="customer">
+    <view class="option mui-icon">
+      <text class="optionTitle collect icon-locationfill ">收货人：{{name}}
+        <text class="detailscontent">
+        收货地址：{{destination}}
+        </text>
+      </text>
+    </view>
+  </view>
+  <view class="option mui-icon">
+    <text class="optionTitle address icon-mobilefill">
+    <text class="detailscontent">联系电话：{{phone}}</text></text>
+  </view>
+  <view class="products">
+    <image class="img" src="https://imagizer.imageshack.us/v2/644x483q90/922/jex3is.jpg"></image>
+    <view class="option mui-icon">
+      <text class="optionTitle record icon-lightfill">
+      <text class= "detailscontent" >产品名：{{productName}}
+      </text>
+      </text>
+      <view class="date">
+        <text class="detailscontent">预约日期：{{date}}
+      </text></view>
+      <view class="priceNumber">
+        <view class="price">
+          单价：${{price}}
+        </view>
+        <view class="number">
+          数量：{{productNumber}} 份
+        </view>
+        <view class="sum">
+          总价： ${{sum}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="option mui-icon">
+    <view class="others">备注：
+      <text class="otherscontent">{{others}}</text>
+    </view>
+  </view>
+</view>
+<view class="down">
+  <view class="button">
+    <button class="back" bindtap="back">返回</button>
+  </view>
+</view>

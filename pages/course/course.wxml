@@ -1,0 +1,25 @@
+<view class="main">
+  <view class="topdescribe">
+    <image class="image" src="/img/img2.png" mode="aspectFill">
+    </image>
+  </view>
+  <view class="AboutUs">
+    <view class="contactUs" bindtap="calling">
+    <image class="phoneimage" src="/img/phone.jpg"></image>
+     Call : 0433382826
+    </view>
+
+<view class="wechatDetails">
+ <image class="phoneimage" src="/img/wechaticon.png"></image>
+Wechat : Mininiki
+</view>
+  </view>
+  <view wx:for="{{coursedetails}}" class="courselist" wx:key="index">
+    <view class="herital">
+      <image class="courseimg" mode="scaleToFill" src="{{coursedetails[index].img}}"></image>
+      <textarea class="coursedescribe" disabled="true">課程介紹：\r{{coursedetails[index].details}}</textarea>
+    </view>
+    <view class="coursename">{{coursedetails[index].coursename}}</view>
+  </view>
+
+</view>

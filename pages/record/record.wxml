@@ -1,0 +1,86 @@
+<view>
+  <view class="fff module module1">
+    <view class="header flex">
+      <view class="user">
+        <block wx:if="{{userHaveInfo}}">
+          <image class="userPic" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userName">{{ userInfo.nickName }}</text>
+        </block>
+        <block wx:else>
+          <view class="userName">
+            <text>未获取个人资料</text>
+          </view>
+        </block>
+      </view>
+      <block wx:if="{{userHaveInfo}}">
+        <navigator url="../record/record" class="account mui-icon-arrowright arrows">
+          <navigator url="../personalinfo/personalinfo">
+            <text class="accountMassage_text">账户管理</text>
+          </navigator>
+        </navigator>
+
+      </block>
+      <block wx:else>
+        <button class="accountMassage_text" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo">授权</button>
+      </block>
+    </view>
+    <block wx:if="{{userHaveInfo}}">
+      <view class="flex state">
+        <navigator url="../lookRecord/lookRecord?check=false">
+          <view class="stateItem icon-send">
+            <text>已下单</text>
+          </view>
+        </navigator>
+                <navigator url="../lookRecord/lookRecord?confirm=true">
+        <view class="stateItem icon-deliver">
+          <text>待发货</text>
+        </view>
+                </navigator>
+        <navigator url="../lookRecord/lookRecord?check=true">
+          <view class="stateItem icon-goodsnew">
+            <text>已完成</text>
+          </view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+
+  <view>
+
+
+
+    <view class="fff module module3">
+      <navigator url="../changeInfo/changeInfo" class="option arrows mui-icon-arrowright" wx:if="{{haveRecord}}">
+        <text class="optionTitle address icon-locationfill">管理我联络资料的收货地址</text>
+      </navigator>
+      <view class="classname" bindtap="showModal" wx:else>
+        <navigator url="../record/record" class="option arrows mui-icon-arrowright">
+          <text class="optionTitle address icon-locationfill">管理我联络资料的收货地址</text>
+        </navigator>
+      </view>
+      <modal title="操作失败" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">您好，你暂时未有购买记录</modal>
+
+      <navigator url="../feedback/feedback" class="option arrows mui-icon-arrowright">
+        <text class="optionTitle idea icon-writefill">意见反馈</text>
+      </navigator>
+          <view class="fff module module3">
+</view>
+    </view>
+
+    <view class="fff module module3">
+      <navigator url="../technicsDetails/technicsDetails" class="option arrows mui-icon-arrowright">
+        <text class="optionTitle record icon-lightfill">技术支持</text>
+      </navigator>
+    </view>
+  </view>
+
+</view>
+<view class="bot">  
+     <view class="contactView">
+        <text class="contactbutton">点击联系客服</text>
+        <view class ="contactUS">
+           <contact-button  type="default-light" size="30" session-from="weapp" class="guest-button">
+  </contact-button>
+       </view>
+  </view>  
+</view>

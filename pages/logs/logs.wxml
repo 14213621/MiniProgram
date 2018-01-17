@@ -1,0 +1,39 @@
+<view class="main">
+  <view class="detailslist">
+    <view class="title">
+      <text> Here is order:</text>
+    </view>
+    <block wx:if="{{haveOrder}}">
+      <view class="background">
+        <view wx:for="{{orderitem}}" class="list" wx:key="index">
+          <navigator url="/pages/orderdetails/orderdetails?index={{index}}" class="product">
+            <view class="left">
+              <view class="classname">收货人：{{orderitem[index][0].name}}</view>
+               <view >产品：{{orderitem[index][0].productName}}</view>
+              <view >数量：{{orderitem[index][0].productNumber}}</view>
+            </view>
+          </navigator>
+          <view class="right">
+            <checkbox-group bindchange="checkboxChange" id="{{index}}">
+              <checkbox id="{{index}}" value="{{index}}" checked="true" color="#ffc0cb">
+              </checkbox>
+            </checkbox-group>
+            <view class="rubbishimage" bindtap="rubbishtap">
+            <image class="rubbish" id="{{index}}" src="/img/rubbish.png"></image>
+          </view>
+          </view>
+        </view>
+        <button class="confirmbutton" bindtap="orderconfirm">confirm</button>
+
+        <view class="have3Elements">No any more...</view>
+      </view>
+    </block>
+
+    <block wx:elif="!{{haveOrder}}">
+      <view class="noorder">
+        <text>no order</text>
+      </view>
+    </block>
+
+  </view>
+</view>

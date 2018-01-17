@@ -1,0 +1,14 @@
+<!--pages/technicsDetails/technicsDetails.wxml-->
+<view class="top">
+  <view class="classname">
+    <text>技術：monkey</text>
+  </view>
+  <view class="classname">
+    <text>QQ:535969090</text>
+  </view>
+  <view class="classname">
+    <text>微信號：monkey535969090</text>
+  </view>
+
+</view>
+<button class="back" bindtap="back">返回</button>

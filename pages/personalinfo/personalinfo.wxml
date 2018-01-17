@@ -1,0 +1,43 @@
+
+<form class="signup-form">
+  <view class="allList">
+  <view class="top">
+  修改个人资料和收货地址
+  </view>
+  <view class="bottom">
+    <view wx:for="{{items}}" class="signup-section">
+      <view class="signup-item" wx:if="{{!item.button}}">
+        {{item.name}}
+      </view>
+
+
+      <input class="signup-singleline" placeholder="{{userN}}" bindinput="userNameInput" wx:if="{{item.inputName}}" />
+
+      <input class="signup-singleline" placeholder="{{phone}}" bindinput="phoneNoInput" type="number" wx:if="{{item.inputPhone}}" />
+
+
+
+      <picker class="signup-singleline" wx:if="{{item.picker}}" value="{{item.value}}" wx:if="{{item.selectorDestination}}" range="{{array}}" bindchange="bindPickerChange" data-index="{{index}}">
+        <text>{{destinationArea}}</text>
+      </picker>
+
+
+      <textarea class="signup-textarea" wx:if="{{item.inputDestination}}" bindinput="destinationInput" placeholder-class="placeholder" name="content" focus="{{focus}}" value="{{item.value.content}}" auto-height>{{detailsDestination}}
+      </textarea>
+
+
+      <switch class="signup-switch" wx:if="{{item.switch}}" checked="{{item.checked}}" />
+
+      <slider class="signup-singleline signup-slider" wx:if="{{item.slider}}" min="{{item.min}}" max="{{item.max}}" show-value="{{item.show}}">
+      </slider>
+
+ 
+    </view>
+    <view class="buttonType">
+         <button class="signup-btn" bindtap="submit" type="primary" style="opacity: {{opacity}};color: white; background-color: #ff8719;" disabled="{{disabled}}" loading="{{loginLoading}}">
+        修改
+      </button>
+      </view>
+  </view>
+  </view>
+</form>

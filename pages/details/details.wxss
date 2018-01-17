@@ -1,0 +1,47 @@
+/* details.wxss */
+.details
+{
+   text-align: center;
+   align-items:center;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 30rpx;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+}
+.banner {
+	height: 450rpx;
+     text-align: center;
+   color: palevioletred;
+}
+.banner image {
+	width: 80%;
+	height: 100%;
+}
+.topbanner{
+    display:flex;
+  align-items:center;
+
+  border-bottom:6px solid #ffffff;
+     text-align: center;
+   color: palevioletred;
+}  
+.buybutton
+{
+    padding-top: 50rpx;
+    -webkit-text-fill-color: white;
+}
+.buy
+  {
+  flex-basis:140rpx;
+  width: 130rpx;
+  height:60rpx; 
+  border:1px solid #ffffff; 
+  border-radius:24rpx; 
+  background:pink; 
+  text-align:center; 
+  font-size:35rpx; 
+  line-height:56rpx; 
+  color:white; 
+}

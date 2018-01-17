@@ -1,0 +1,38 @@
+<!--index.wxml-->
+
+<view class="title">
+  <scroll-view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+    <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+      <block wx:for="{{banners}}" wx:key="id">
+        <swiper-item>
+          <image data-id="{{index}}" src="{{item.img}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </scroll-view>
+  <view class="middle">
+  <label>选择产品类型</label>
+  <view class="classify">
+    <block wx:for="{{Type}}" wx:key="typeNo">
+      
+      <navigator class="classify-nav"  id="{{item.name}}"  url="../classifydetails/classifydetails?typename={{item.name}}&Tname={{item.typename}}">
+        <view>
+          <image mode="aspectFill" class="classify-pic" src="{{item.img}}"></image>
+        </view>
+        <view class="classify-name">             
+        <block wx:if="{{item.newest}}">
+          <image mode="widthFix" class="fireimage" src="/img/fire.png"/>
+          </block>
+        {{item.typename}}
+
+        </view>
+      
+      </navigator>
+      
+    </block>
+  </view>
+</view>
+  <view class="message">
+  <image class="message-img" src="https://imagizer.imageshack.us/v2/797x456q90/924/gZvzYl.jpg"></image>
+  </view>
+  </view>

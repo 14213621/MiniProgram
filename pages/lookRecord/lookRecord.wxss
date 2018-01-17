@@ -1,0 +1,152 @@
+/* pages/lookRecord/lookRecord.wxss */
+.orderlist
+{
+  background-color: #333333;
+}
+.top {
+  position: relative;
+  height: 300rpx;
+  font-weight: bold;
+}
+
+.top .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300rpx;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+/*底图*/
+
+.top .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 300rpx;
+}
+
+.top .img image {
+  width: 100%;
+  height: 100%;
+}
+
+/*位置*/
+
+.top .pos {
+  position: relative;
+  padding-top: 50rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.top .pos .icon {
+  height: 8rpx;
+  width: 18rpx;
+  margin-left: 18rpx;
+  background: src="http://imageshack.com/a/img923/8553/b7y457.gif" no-repeat;
+  background-size: 94rpx 38rpx;
+}
+
+.bop
+{
+  align-items: center;
+  text-align: center;
+}
+.tab {
+    display: flex;
+  align-items: center;
+  text-align: center;
+}
+.classify-pic {
+    width: 200rpx;
+    height: 180rpx;
+  border-radius: 50%;
+}
+.search-items .items-
+.black{
+  color: #353535;
+}
+.search-items .items-title.yellow{
+  color: #B99B43;
+}
+.search-items .items{
+  display: flex;
+  width: 690rpx;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20rpx 0;
+}
+.search-items .items .img{
+  width: 120rpx;
+  height: 120rpx;
+}
+.search-items .items .img image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.search-items .items .detail{
+  width: 570rpx;
+  box-sizing: border-box;
+  padding-left: 26rpx;
+}
+.search-items .items .detail-title{
+  display: inline-block;
+  width: 570rpx;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.search-items .items .detail-express,
+.search-items .items .detail-msg{
+  color: #999;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  padding: 7rpx 0;
+}
+.search-items .items .detail-express text {
+  line-height: 36rpx;
+}
+.search-items .items .detail-msg button{
+    width: 186rpx;
+    font-size: 26rpx;
+    color: #353535;
+    margin-top: 20rpx;
+    float: left;
+    border: 2rpx solid rgba(5, 5, 5.0.1)
+}
+.search-items .type-text {
+   font-size: 32rpx;
+   color: #333;
+}
+  .back
+  {
+  flex-basis:140rpx;
+  height:60rpx; 
+  width:180rpx;
+  border:1px solid #ffffff; 
+  border-radius:24rpx; 
+  background:navajowhite; 
+  text-align:center; 
+  font-size:40rpx; 
+  line-height:56rpx; 
+  color:white; 
+}
+.button
+{
+      padding-top: 15px;
+      height:150rpx;
+}

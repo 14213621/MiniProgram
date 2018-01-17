@@ -1,0 +1,48 @@
+/* pages/feedback/feedback.wxss */
+.signup-form {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 30rpx;
+  overflow: hidden;
+  -webkit-text-fill-color: gold
+}
+.signup-item {
+  width: 30%;
+  text-align: right;
+  padding-right: 5rpx;
+  color: #555;
+   padding-top: 200rpx;
+  -webkit-text-fill-color: brown
+}
+.signup-textarea {
+  padding-left: 10rpx;
+  width: 80%;
+  height: 400rpx;
+  background-color: papayawhip;
+}
+.top
+{
+  font-size: 20pt;
+  text-align: center;
+}
+.signup-section {
+  display: flex;
+  margin-bottom: 30rpx;
+  padding-top: 30rpx;
+  background-color: fff;
+}
+.back
+{
+  flex-basis:140rpx;
+  height:60rpx; 
+  width: 150rpx;
+  border:1px solid #ffffff; 
+  border-radius:24rpx; 
+  background:black; 
+  text-align:center; 
+  align-items: center;
+  font-size:35rpx; 
+  line-height:56rpx; 
+  color:white; 
+}

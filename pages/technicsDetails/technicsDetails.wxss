@@ -1,0 +1,24 @@
+/* pages/technicsDetails/technicsDetails.wxss */
+.back
+{
+  flex-basis:140rpx;
+  height:60rpx; 
+  width: 150rpx;
+  border:1px solid #ffffff; 
+  border-radius:24rpx; 
+  background:black; 
+  text-align:center; 
+  align-items: center;
+  font-size:35rpx; 
+  line-height:56rpx; 
+  color:white; 
+}
+.top
+{
+    font-size: 18pt;
+  text-align: center;
+   padding-top: 80rpx;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+  padding-bottom: 20rpx;
+}

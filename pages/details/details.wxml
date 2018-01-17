@@ -1,0 +1,25 @@
+<view class="topbanner">
+  <scroll-view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+    <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+      <block wx:for="{{top}}" wx:key="index">
+        <swiper-item>
+          <image bindtap="clickImage" data-id="{{index}}" src="{{top[index]}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </scroll-view>
+</view>
+<view class="details">
+  <text>
+    Product name：{{productname}}
+  </text>
+  <text>
+    Details：{{details}}
+  </text>
+    <text>
+    Price：${{price}}
+  </text>
+</view>
+<view class="buybutton">
+  <button class="buy" bindtap="buy">購買</button>
+</view>

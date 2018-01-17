@@ -1,0 +1,31 @@
+/* pages/cart/cart.wxss */
+.pic_background{
+  height: 200rpx;
+  width:300rpx;
+  position:absolute;
+}
+
+.top
+{
+    align-items:center;
+      text-align:center; 
+
+}
+.content
+{
+  text-align:center; 
+  color: palevioletred;
+}
+.back
+{
+  flex-basis:140rpx;
+  width: 300rpx;
+  height:60rpx; 
+  border:1px solid #ffffff; 
+  border-radius:24rpx; 
+  background:pink; 
+  text-align:center; 
+  font-size:35rpx; 
+  line-height:56rpx; 
+  color:white; 
+}

@@ -1,0 +1,63 @@
+<!--pages/lookRecord/lookRecord.wxml-->
+<view class="main">
+  <view class="top">
+    <view class="img">
+      <image src="http://imageshack.com/a/img922/5682/i9I2lM.gif"></image>
+    </view>
+    <block wx:if="{{!confirm}}">
+      <block wx:if="{{!check}}">
+        <view class="pos">
+          <text>已下订单</text>
+          <text class="icon"> </text>
+        </view>
+      </block>
+      <block wx:else if="{{check}}">
+        <view class="pos">
+          <text>已完成订单</text>
+          <text class="icon"> </text>
+        </view>
+      </block>
+    </block>
+
+    <block wx:else if="{{confirm}}">
+      <view class="pos">
+        <text>已确认订单</text>
+        <text class="icon"> </text>
+      </view>
+    </block>
+
+  </view>
+  <view class="orderlist">
+    <block wx:for="{{order}}" wx:for-item="order" wx:key="objectId">
+      <navigator url="../lookRecord/detailsRecord/detailsRecord?productName={{order.productName}}&name={{order.name}}&destination={{order.destination}}&phone={{order.phone}}&date={{order.date}}&productNumber={{order.productNumber}}&sum={{order.sum}}&others={{order.others}}&productID={{order.productID}}&shiffing=true">
+        <view class="search-items">
+          <view class="items">
+            <view class="img">
+              <image src="{{order.img}}" />
+            </view>
+            <view class="detail">
+              <view class="detail-title" wx:if="{{title != ''}}">{{order.productName}}</view>
+              <view class="detail-express">
+                <text>收货人：</text>
+                <text class="number">{{order.name}}</text>
+              </view>
+              <view class="detail-express">
+                <!-- <text>商品数量：</text>
+          <text class="number">共{{amount}}件</text> -->
+                <text>收货地址：</text>
+                <text class="number">{{order.destination}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+  <view class="button">
+    <button class="back" bindtap="backHome">返回</button>
+  </view>
+  <view class="bop">
+    <image mode="aspectFill" class="classify-pic" src="http://imageshack.com/a/img923/8553/b7y457.gif" />
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/cart/cart.wxml-->
+<view class="top">
+<image class="picture" src="https://imagizer.imageshack.us/v2/500x238q90/923/XmGjG6.png"></image>
+</view>
+<view class="content">
+<text>成功預約購買</text>
+<button open-type="contact"  formType="submit" class="back" bindtap="back">返回</button>
+</view>

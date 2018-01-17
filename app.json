@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/details/details",
+    "pages/course/course",
+    "pages/cart/cart",
+    "pages/orderdetails/orderdetails",
+    "pages/confirm/confirm",
+    "pages/classifydetails/classifydetails",
+    "pages/record/record",
+    "pages/technicsDetails/technicsDetails",
+    "pages/changeInfo/changeInfo",
+    "pages/personalinfo/personalinfo",
+    "pages/feedback/feedback",
+    "pages/lookRecord/lookRecord",
+    "pages/lookRecord/detailsRecord/detailsRecord"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffc0cb",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": "false",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "Mini Kitchen"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f00",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "img/h1.jpg",
+        "selectedIconPath": "img/h1.jpg"
+      },
+      {
+        "text": "课程",
+        "pagePath": "pages/course/course",
+        "iconPath": "img/course.png",
+        "selectedIconPath": "img/course.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/logs/logs",
+        "iconPath": "img/cart1.jpg",
+        "selectedIconPath": "img/cart1.jpg"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/record/record",
+        "iconPath": "img/me.png",
+        "selectedIconPath": "img/me2.png"
+      }
+    ]
+  }
+}

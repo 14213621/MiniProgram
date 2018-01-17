@@ -1,0 +1,11 @@
+<form class="signup-form">
+<view class="top">意见收集箱</view>
+<view class="signup-section">
+  <view class="signup-item">
+    意见内容
+  </view>
+  <textarea class="signup-textarea" bindinput="commentInput" placeholder-class="placeholder" name="content" focus="{{focus}}" value="{{item.value.content}}" >
+  </textarea>
+  </view>
+  <button class="back" bindtap="back">确认</button>
+</form>

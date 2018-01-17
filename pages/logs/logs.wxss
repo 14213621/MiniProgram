@@ -1,0 +1,107 @@
+.product
+{
+  padding-left: 0rpx;
+  border-radius: 5rpx;
+	position: relative;
+  text-align: left;
+  background-color: lightgoldenrodyellow;
+}
+.pic_background
+{
+  position: relative;
+  padding-left: 0rpx;
+
+}
+.title
+{
+  font-size: 90rpx;
+    text-align: center;
+   position: relative;
+}
+  .confirmbutton
+  {
+  flex-basis:140rpx;
+  width:200rpx;
+  border:1px solid #ffffff; 
+  border-radius:24rpx; 
+  background:pink; 
+  font-size:35rpx; 
+  color:white; 
+   margin-top: 20px;
+}
+.list
+{
+  display: flex;
+   margin-top: 10px;
+}
+
+.left
+{
+  width: 550rpx;
+  align-items: left;
+  text-align: left;
+  padding-left: 5px;
+}
+.right
+{
+  padding-left: 5px;
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+.have2Elements
+{
+
+margin-top: 30px;
+}
+.have3Elements
+{
+margin-top: 30px;
+}
+.noanymore
+{
+ margin-top: 40px;
+}
+.noorder
+{
+   position:relative;
+}
+.main
+{
+  height: 100%;
+background-color: lightpink;
+  font-style: oblique;
+  font-size: 50px;
+  color: #696969;
+  position: relative;
+}
+.rubbish
+{
+  height:50rpx;
+  width:80rpx;
+}
+.contact
+{
+  padding-left: 0rpx;
+  border-radius: 5rpx;
+     text-align: left;
+
+}
+.detailslist
+{
+  text-align: center;
+  color: #696969;
+  font-size: 20px;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  position: relative;
+   background-image: url("https://imagizer.imageshack.us/v2/151x466q90/923/W0GTuI.jpg");
+ background-attachment:local;
+ background-repeat:repeat;
+}
+
+.others
+{ 
+    border-radius: 5rpx;
+         text-align: left;
+}

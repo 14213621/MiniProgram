@@ -1,0 +1,6 @@
+/* pages/confirm/confirm.wxss */
+.main
+{
+  height:100%;
+  color: pink;
+}

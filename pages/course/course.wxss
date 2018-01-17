@@ -1,0 +1,76 @@
+  .main
+{
+  height: 100%;
+  width:100%;
+    color: palevioletred;
+  background-color: white;
+  position:relative;
+}
+.AboutUs
+{
+  padding-top: 10PX;
+  font-size: 30px;
+  text-align: center;
+}
+.contactUs
+{
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.wechatDetails
+{
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.pic_background
+{
+  height: 100%;
+  width:100%;
+  position: absolute;
+  background-repeat: true
+}
+.coursedescribe
+{
+  background-color: lightpink;
+  height:200rpx;
+  color: white;
+ font-size: 18px;
+
+
+}
+.herital
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.coursename
+{
+  font-size:25px;
+  text-align: center;
+}
+.courseimg
+{
+  height:200rpx;
+  width:200rpx;
+ display:flex;
+}
+
+.courselist
+{  text-align: left;
+    position:relative;
+    font-size: 20px;
+   height:350rpx;
+  padding-top: 20px;
+}
+.phoneimage
+{
+  height:40rpx;
+  width:40rpx;
+}
+.image
+{
+  width:100%;
+}

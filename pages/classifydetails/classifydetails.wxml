@@ -1,0 +1,58 @@
+<view class="choose" wx:if="{{latest}}">
+  <view class="background" style="height:{{Height}}px">
+    <image class="title" src="{{titleimage}}" />
+    <scroll-view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+      <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+        <block wx:for="{{products}}" wx:key="index">
+          <navigator url="../details/details?productid={{item.objectId}}">
+            <swiper-item class="swipItem">
+              <image data-id="{{item.objectId}}" src="{{item.img}}" />
+              <view class="nameAndimg">
+                <view class="itemname">
+                  <text class="name">{{item.name}}</text>
+                </view>
+                <view class="clickimage">
+                  <image class="clickimage" mode="aspectFit" src="/img/click.png" />
+                </view>
+              </view>
+            </swiper-item>
+          </navigator>
+        </block>
+      </swiper>
+    </scroll-view>
+    <image mode="aspectFit" class="backImage" src="http://imagizer.imageshack.us/v2/640x480q90/923/FBFHzO.png"></image>
+  </view>
+
+</view>
+<view wx:else>
+  <view class="background">
+    <image class="title" src="{{titleimage}}" />
+  </view>
+  <view class="line">
+    <image mode="scaleToFill" src="{{line}}"></image>
+  </view>
+
+
+  <block wx:for="{{products}}" wx:key="index">
+    <view class="main">
+      <navigator url="../index/index?productname={{item.name}}&productid={{item.objectId}}">
+        <image class="products" mode="aspectFill" src="{{item.img}}"> </image>
+
+      </navigator>
+      <view class="right">
+        <view class="but">
+          <button class="buy" bindtap="buy" id="{{item.objectId}}" name="{{item.name}}">购买</button>
+          <button class="details" bindtap="details" id="{{item.objectId}}">详情</button>
+        </view>
+        <view class="productsname">
+          <label>产品: {{item.name}}</label>
+        </view>
+        <view class="productsname">
+          <label>价钱: ${{item.price}}
+          </label>
+        </view>
+      </view>
+    </view>
+
+  </block>
+</view>

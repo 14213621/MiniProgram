@@ -1,0 +1,60 @@
+.banner {
+	height: 450rpx;
+}
+.banner image {
+	width: 80%;
+	height: 100%;
+}
+.title{
+   text-align: center;
+   color: palevioletred;
+   background: white;
+}
+.middle
+{
+  padding-top: 20px;
+}
+
+.classify {
+  padding-top: 10px;
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.classify-nav {
+    width: 220rpx;
+    height: 250rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.classify-pic {
+    width: 200rpx;
+    height: 180rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.classify-name {
+    display: block;
+    height: 40rpx;
+}
+.fireimage
+{
+width: 30rpx;
+height: 20rpx;
+}
+
+.message
+{
+  padding-top: 20px;
+}
+.message-img
+{
+  border-radius: 100%;
+}
